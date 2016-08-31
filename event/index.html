@@ -1,0 +1,797 @@
+
+<!DOCTYPE html>
+ 
+
+<!--[if IE 7]> <html class="ie ie7" lang="en-US" prefix="og: http://ogp.me/ns#" > <![endif]-->
+
+<!--[if IE 8]> <html class="ie ie8" lang="en-US" prefix="og: http://ogp.me/ns#" > <![endif]-->
+
+<!--[if IE 9]> <html class="ie ie9" lang="en-US" prefix="og: http://ogp.me/ns#" > <![endif]-->
+
+<!--[if !(IE 7) | !(IE 8) | !(IE 9) ]><!-->
+
+<html lang="en-US" prefix="og: http://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]-->
+
+
+
+<!-- Mirrored from www.qmarkets.net/gartner-research/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Aug 2016 05:12:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+	<meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-963.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">	
+	
+		
+				
+									<link rel="icon" type="image/png"  href="../wp-content/uploads/2015/02/favicon.png">
+						
+		  
+	<title>
+
+			Qmarkets | Swiss events
+	</title>
+	
+	<!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>-->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+	
+	<script src="../../cdn.optimizely.com/js/3393250934.js"></script>
+<!-- This site is optimized with the Yoast WordPress SEO plugin v2.0.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Gartner Research reviewed Qmarkets as a &quot;Representative Vendor&quot; in the Innovation Management market. Download the Gartner innovation management PDF report."/>
+<link rel="canonical" href="index.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Gartner Market Guide for Innovation Management" />
+<meta property="og:description" content="Gartner Research reviewed Qmarkets as a &quot;Representative Vendor&quot; in the Innovation Management market. Download the Gartner innovation management PDF report." />
+<meta property="og:url" content="http://www.qmarkets.net/gartner-research/" />
+<meta property="og:site_name" content="Qmarkets" />
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="Qmarkets &raquo; Gartner Research Comments Feed" href="feed/index.html" />
+<link rel='stylesheet' id='contact-form-7-css'  href='../wp-content/plugins/contact-form-7/includes/css/styles2f54.css?ver=4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='../wp-content/plugins/revslider/public/assets/css/settings58aa.css?ver=5.0.7' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+.shadowtext{text-shadow:2px 2px #000000}
+</style>
+<link rel='stylesheet' id='grid-style-css'  href='../wp-content/themes/qmarkets/css/grid0235.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='theme1-style-css'  href='../wp-content/themes/qmarkets/css/theme10235.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='../wp-content/themes/qmarkets/font-awesome/css/font-awesome.min0235.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='main-style-css'  href='../wp-content/themes/qmarkets/style0235.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-style-css'  href='../wp-content/themes/qmarkets/customize/custom0235.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-style-css'  href='../wp-content/themes/qmarkets/css/responsive0235.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='review-pages-css'  href='../wp-content/themes/qmarkets/css/review-pages0235.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='../wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.min00e2.css?ver=1.5.7' type='text/css' media='screen' />
+<link rel='stylesheet' id='A2A_SHARE_SAVE-css'  href='../wp-content/plugins/add-to-any/addtoany.min3aa8.css?ver=1.9' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery90f9.js?ver=1.11.1'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min1576.js?ver=1.2.1'></script>
+<script type='text/javascript' src='../wp-content/plugins/revslider/public/assets/js/jquery.themepunch.enablelog58aa.js?ver=5.0.7'></script>
+<script type='text/javascript' src='../wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min58aa.js?ver=5.0.7'></script>
+<script type='text/javascript' src='../wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min58aa.js?ver=5.0.7'></script>
+<script type='text/javascript' src='../../addevent.com/libs/atc/1.6.1/atc.min51a2.js?ver=1.6.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.html?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.1.1" />
+<link rel='shortlink' href='../index1a22.html?p=4616' />
+
+<script type="text/javascript"><!--
+var a2a_config=a2a_config||{},wpa2a={done:false,html_done:false,script_ready:false,script_load:function(){var a=document.createElement('script'),s=document.getElementsByTagName('script')[0];a.type='text/javascript';a.async=true;a.src='../../static.addtoany.com/menu/page.js';s.parentNode.insertBefore(a,s);wpa2a.script_load=function(){};},script_onready:function(){if(a2a.type=='page'){wpa2a.script_ready=true;if(wpa2a.html_done)wpa2a.init();}},init:function(){for(var i=0,el,target,targets=wpa2a.targets,length=targets.length;i<length;i++){el=document.getElementById('wpa2a_'+(i+1));target=targets[i];a2a_config.linkname=target.title;a2a_config.linkurl=target.url;if(el){a2a.init('page',{target:el});el.id='';}wpa2a.done=true;}wpa2a.targets=[];}};a2a_config.callbacks=a2a_config.callbacks||[];a2a_config.callbacks.push({ready:wpa2a.script_onready});
+//--></script>
+<meta name="generator" content="Powered by Slider Revolution 5.0.7 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+
+<!-- Easy FancyBox 1.5.7 using FancyBox 1.3.7 - RavanH (http://status301.net/wordpress-plugins/easy-fancybox/) -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var fb_timeout = null;
+var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'showCloseButton' : true, 'centerOnScroll' : true, 'enableEscapeButton' : true, 'autoScale' : true };
+var easy_fancybox_handler = function(){
+	/* IMG */
+	var fb_IMG_select = 'a[href*=".jpg"]:not(.nofancybox,.pin-it-button), area[href*=".jpg"]:not(.nofancybox), a[href*=".jpeg"]:not(.nofancybox,.pin-it-button), area[href*=".jpeg"]:not(.nofancybox), a[href*=".png"]:not(.nofancybox,.pin-it-button), area[href*=".png"]:not(.nofancybox)';
+	jQuery(fb_IMG_select).addClass('fancybox image');
+	var fb_IMG_sections = jQuery('div.gallery');
+	fb_IMG_sections.each(function() { jQuery(this).find(fb_IMG_select).attr('rel', 'gallery-' + fb_IMG_sections.index(this)); });
+	jQuery('a.fancybox, area.fancybox, li.fancybox a:not(li.nofancybox a)').fancybox( jQuery.extend({}, fb_opts, { 'easingIn' : 'easeOutBack', 'easingOut' : 'easeInBack', 'opacity' : false, 'hideOnContentClick' : false, 'titleShow' : true, 'titlePosition' : 'over', 'titleFromAlt' : true, 'showNavArrows' : true, 'enableKeyboardNav' : true, 'cyclic' : false }) );
+	/* YouTube */
+	jQuery('a[href*="youtube.com/watch"]:not(.nofancybox), area[href*="youtube.com/watch"]:not(.nofancybox)').addClass('fancybox-youtube');
+	jQuery('a[href*="youtu.be/"]:not(.nofancybox), area[href*="youtu.be/"]:not(.nofancybox)').addClass('fancybox-youtube');
+	jQuery('a.fancybox-youtube, area.fancybox-youtube, li.fancybox-youtube a:not(li.nofancybox a)').fancybox( jQuery.extend({}, fb_opts, { 'type' : 'iframe', 'width' : 900, 'height' : 560, 'titleShow' : false, 'titlePosition' : 'float', 'titleFromAlt' : true, 'onStart' : function(selectedArray, selectedIndex, selectedOpts) { selectedOpts.href = selectedArray[selectedIndex].href.replace(new RegExp('youtu.be', 'i'), 'www.youtube.com/embed').replace(new RegExp('watch\\?(.*)v=([a-z0-9\_\-]+)(&amp;|&|\\?)?(.*)', 'i'), 'embed/$2?$1$4'); var splitOn = selectedOpts.href.indexOf('?'); var urlParms = ( splitOn > -1 ) ? selectedOpts.href.substring(splitOn) : ""; selectedOpts.allowfullscreen = ( urlParms.indexOf('fs=0') > -1 ) ? false : true } }) );
+	/* Auto-click */ 
+	jQuery('#fancybox-auto').trigger('click');
+}
+/* ]]> */
+</script>
+
+
+<!-- Hotjar Tracking Code for http://qmarkets.net -->
+<script>
+	(function(h,o,t,j,a,r){
+		h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+		h._hjSettings={hjid:243758,hjsv:5};
+		a=o.getElementsByTagName('head')[0];
+		r=o.createElement('script');r.async=1;
+		r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+		a.appendChild(r);
+	})(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<!-- temporary css file -->
+<link rel='stylesheet' href='../wp-content/themes/qmarkets/css/events.css' type='text/css' media='all' />
+
+</head>
+
+<body class="page page-id-4616 page-template page-template-templates page-template-page-sub-reviews-two page-template-templatespage-sub-reviews-two-php">
+	
+	<!-- Google Tag Manager -->
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-TLCP7R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TLCP7R');</script>
+<!-- End Google Tag Manager -->	
+		
+	<!-- header -->
+	<div class="header">
+	
+		<div class="row header-inner" style="background-color: #7a939d; background-image: url(../wp-content/uploads/2015/02/blog1.jpg); ">
+		
+			<div class="header-top-row">
+			
+				<div class="grid">
+			
+					<div class="col-20">
+
+						<div class="site-logo">
+
+							<a href="../index.html"><img width="300" height="70" src="../wp-content/uploads/2015/01/logo_light-300x70.png" class="attachment-medium" alt="Qmarkets - Innovation Management" data-fixed-src="http://www.qmarkets.net/wp-content/uploads/2015/01/logo_dark-300x70.png" /></a>	
+							
+						</div> 
+					
+					</div>
+						
+					<div class="col-80">
+						
+						<div class="main-menu-wrap">
+
+							<div class="mobile-menu-trigger"></div>
+	
+							<div class="mobile-search"><a href="#"><i class="fa fa-search"></i></a></div>
+	
+								<ul id="menu-main-menu" class="main-menu"><li id="menu-item-846" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-846"><a href="../solutions/by-use-case/innovation-management/index.html">Solutions</a>
+									<ul class="sub-menu">
+										<li id="menu-item-847" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sub-menu-title menu-item-847"><a href="../solutions/by-use-case/innovation-management/index.html">By Use Case</a>
+										<ul class="sub-menu">
+											<li id="menu-item-843" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-843"><a href="../solutions/by-use-case/innovation-management/index.html">Innovation Management</a></li>
+											<li id="menu-item-1076" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1076"><a href="../solutions/by-use-case/employees-suggestion-box/index.html">Employee Online Suggestion Box</a></li>
+											<li id="menu-item-842" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-842"><a href="../solutions/by-use-case/process-improvement/index.html">Process Improvement</a></li>
+											<li id="menu-item-841" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-841"><a href="../solutions/by-use-case/marketing-and-strategy/index.html">Marketing and Strategy</a></li>
+											<li id="menu-item-840" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-840"><a href="../solutions/by-use-case/citizens-engagement/index.html">Citizens&#8217; Engagement</a></li>
+											<li id="menu-item-1077" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1077"><a href="../solutions/by-use-case/market-research/index.html">Market Research</a></li>
+										</ul>
+									</li>
+										<li id="menu-item-1406" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sub-menu-title menu-item-1406"><a href="../solutions/by-industry/consumer-packaged-goods-cpg/index.html">By industry</a>
+										<ul class="sub-menu">
+											<li id="menu-item-937" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-937"><a href="../solutions/by-industry/consumer-packaged-goods-cpg/index.html">Consumer Packaged Goods (CPG)</a></li>
+											<li id="menu-item-935" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-935"><a href="../solutions/by-industry/financial-institutes/index.html">Financial Institutes</a></li>
+											<li id="menu-item-945" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-945"><a href="../solutions/by-industry/high-tech/index.html">High-Tech</a></li>
+											<li id="menu-item-936" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-936"><a href="../solutions/by-industry/energy-and-utilities-2/index.html">Energy and Utilities</a></li>
+										</ul>
+									</li>
+										<li id="menu-item-1407" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sub-menu-title menu-item-1407"><a href="../solutions/by-organization-size/enterprise/index.html">By organization size</a>
+										<ul class="sub-menu">
+											<li id="menu-item-963" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-963"><a href="../solutions/by-organization-size/enterprise/index.html">Enterprise Innovation Management</a></li>
+											<li id="menu-item-1025" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1025"><a href="../solutions/by-organization-size/sme/index.html">Small Medium Enterprise (SME)</a></li>
+										</ul>
+									</li>
+										<li id="menu-item-1551" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sub-menu-title menu-item-1551"><a href="../ceo/index.html">By Role</a>
+										<ul class="sub-menu">
+											<li id="menu-item-1552" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1552"><a href="../ceo/index.html">CEO</a></li>
+											<li id="menu-item-1550" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1550"><a href="../marketing-manager/index.html">Marketing Manager</a></li>
+											<li id="menu-item-1548" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1548"><a href="../cfo/index.html">CFO</a></li>
+											<li id="menu-item-1549" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1549"><a href="../human-resources-manager/index.html">Human Resources Manager</a></li>
+										</ul>
+									</li>
+									</ul>
+									</li>
+									<li id="menu-item-1394" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1394"><a href="../products/idea-management/features/index.html">Product</a>
+									<ul class="sub-menu">
+										<li id="menu-item-1408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sub-menu-title menu-item-1408"><a href="../products/idea-management/features/index.html">Idea management</a>
+										<ul class="sub-menu">
+											<li id="menu-item-283" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-283"><a href="../products/idea-management/features/index.html">Features</a></li>
+											<li id="menu-item-1033" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1033"><a href="../products/idea-management/editions-2/index.html">Editions</a></li>
+											<li id="menu-item-411" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-411"><a href="../products/idea-management/integrations/index.html">Integrations</a></li>
+											<li id="menu-item-412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-412"><a href="../products/idea-management/security/index.html">Security</a></li>
+											<li id="menu-item-408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-408"><a href="../products/idea-management/deployment-models/index.html">Deployment Models</a></li>
+										</ul>
+									</li>
+										<li id="menu-item-1416" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sub-menu-title menu-item-1416"><a href="../products/additional-products/prediction-markets/index.html">Additional products</a>
+										<ul class="sub-menu">
+											<li id="menu-item-421" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-421"><a href="../products/additional-products/prediction-markets/index.html">Prediction Markets</a></li>
+											<li id="menu-item-419" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-419"><a href="../products/additional-products/crowd-voting/index.html">Crowd voting</a></li>
+											<li id="menu-item-420" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-420"><a href="../products/additional-products/q-live/index.html">Q-live</a></li>
+										</ul>
+									</li>
+									</ul>
+									</li>
+									<li id="menu-item-3532" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3532"><a href="../partners/index.html">Partners</a></li>
+									<li id="menu-item-3531" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3531"><a href="../customers/index.html">Customers</a></li>
+									<li id="menu-item-3528" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3528"><a href="../about-us/blog/index.html">Resources</a>
+									<ul class="sub-menu">
+										<li id="menu-item-4049" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4049"><a href="../about-us/blog/index.html">Our Blog</a></li>
+										<li id="menu-item-4043" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4043"><a href="../the-q-review/index.html">The Q-Review</a></li>
+										<li id="menu-item-3527" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3527"><a href="../newsletters/index.html">Newsletter</a></li>
+									</ul>
+									</li>
+									<li id="menu-item-3524" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current_page_ancestor menu-item-has-children menu-item-3524"><a href="../about-qmarkets/index.html">About</a>
+									<ul class="sub-menu">
+										<li id="menu-item-4048" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4048"><a href="../about-qmarkets/index.html">About Qmarkets</a></li>
+										<li id="menu-item-4720" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children reverse-sub-menu menu-item-4720"><a href="../analyst-reviews/index.html">Analyst Reviews</a>
+										<ul class="sub-menu">
+											<li id="menu-item-4687" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4687"><a href="../info-tech-research-group/index.html">Info-Tech<br />Research Group</a></li>
+											<li id="menu-item-4685" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4685"><a href="../forrester-research/index.html">Forrester Research</a></li>
+											<li id="menu-item-4686" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4616 current_page_item menu-item-4686"><a href="index.html">Gartner Research</a></li>
+										</ul>
+									</li>
+										<li id="menu-item-3530" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3530"><a href="../about-us/news/index.html">News</a></li>
+										<li id="menu-item-3529" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3529"><a href="../events/index.html">Events</a></li>
+									</ul>
+									</li>
+									<li id="menu-item-3533" class="cta-link orange-bg menu-item menu-item-type-post_type menu-item-object-page menu-item-3533"><a href="../contact-us/index.html">Contact Us</a></li>
+									<li id="menu-item-3535" class="search menu-item menu-item-type-custom menu-item-object-custom menu-item-3535"><a href="#"><i class="fa fa-search"></i></a></li>
+								</ul> 
+			
+							<div class="clear"></div>
+							
+							<div class="search-form">
+
+								<form action="http://www.qmarkets.net/" method="get">
+									
+									<div class="grid">
+									
+										<div class="col-70">
+									
+											<input type="text" name="s" id="search" value="" placeholder="Search..." />
+											
+										</div>
+											
+										<div class="col-30">
+										
+											<input type="submit" value="Search" />
+											
+										</div>
+									
+									</div>
+									
+								</form>
+
+							</div>	
+						</div><!-- /.main-menu-wrap -->
+ 
+					</div>
+			
+				</div>
+			
+			</div>
+		
+			<div class="header-bottom-row"><div class="container"><div class="grid"><div class="col-70"><h1 class="page-title">Events</h1></div><div class="col-30"></div></div></div></div>		
+		</div>
+		
+		
+		<div class="row menu-level-2-row">
+
+			<div class="container">
+
+				<div class="col-100">
+
+					<div class="menu-level-2-wrap">
+					
+						<ul id="menu-main-menu-1" class="menu-level-2">
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4048"><a rel="menu-item-4048" href="../about-qmarkets/index.html">idea & innovation management </a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-4720"><a rel="menu-item-4720" href="../analyst-reviews/index.html">our q-360 solutionS</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3530"><a rel="menu-item-3530" href="../about-us/news/index.html">under the hood</a></li>
+						</ul> 
+						
+						<div class="clear"></div>
+						
+					</div>			
+
+				</div>
+
+			</div>
+
+			<div class="clear"></div>
+			
+			
+		</div>	
+	</div><!-- /.header -->
+	
+		
+	<div id="wrapper" class=" template-page-sub-reviews-two inner-page-wrapper">
+	
+		<main>
+
+			<!-- event header section-->
+			<div class="ev-header" style="background-image: url(../wp-content/themes/qmarkets/images/ev-swiss-bg.png)">
+				
+				<div class="container">
+					<img src="../wp-content/themes/qmarkets/images/ev-header-logo.png" alt="" class="ev-header-logo">
+					<p class="ev-header-logo-text">Are proud to invite you to our exclusive:</p>
+					<h2 class="ev-header-title">Swiss Innovation Leader Breakfast Tour</h2>
+				</div><!-- /.container -->
+
+			</div><!-- /.ev-header -->
+			
+			<!-- intro section -->
+			<div class="padding-v">
+				<div class="container">
+					<div class="ev-intro">
+						<div class="grid">
+							
+							<div class="col-70">
+								<div class="ev-intro-content">
+									<h3>Innovation 
+									<br> 
+									<span>is coming to town</span>
+									</h3>
+									<p>Qmarkets &amp; Koina would like to present this rare opportunity to discoverglobal innovation best practices in a local setting. Join us for this personal gathering of innovation leaders and experts at one of three exclusive breakfast events in Switzerland this September. These dynamic and interactive sessions will introduce you to the combination of field-proven strategies and robust turnkey software solutions which have helped hundreds of organisations across the globe to achieve innovation success.</p>
+
+									<div class="ev-intro-content-btn">
+										<div class="btn">
+											<a href="#register">Register now</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- image -->
+							<div class="col-30">
+								<img src="../wp-content/themes/qmarkets/images/ev-wax.png" alt="" class="ev-intro-img">
+
+								<div class="ev-intro-content-mobile-btn">
+									<div class="btn">
+										<a href="#register">Register now</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- map section -->
+			<div class="ev-map-section">
+				map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map
+			</div>
+			
+			<!-- learning -->
+			<div class="padding-v ">
+				<div class="container">
+					<div class="ev-learning">
+
+						<div class="ev-learning-header">
+							<h3 class="ev-learning-title">Learning from leaders</h3>
+							<p>Take this opportunity to engage in an open discussion with fellow peers around any innovation challenge or topic, ranging from disruptive innovation to corporate venturing, and everything in-between.</p>
+						</div>
+
+						<div class="ev-learning-body">
+
+							<div class="ev-learning-item">
+								<div class="ev-learning-item-mobile">
+									<img src="../wp-content/themes/qmarkets/images/ev-leader-1.png" alt="">
+									<h4>Michael Stiegler</h4>
+									<p>VP Global Solution Team Qmarkets</p>
+								</div>
+
+								<div class="ev-learning-item-desktop">
+									<div class="grid">
+										<div class="col-60">
+											<p>These Innovation Leader sessions will be co-lead by renowned expert and thought leader Michael Stilger from Qmarkets, who has moderated at a variety of innovation events over the last decade.</p>
+										</div>
+
+										<div class="col-35">
+											<h4>Michael Stiegler</h4>
+											<p>VP Global Solution Team <br> Qmarkets</p>
+										</div>
+
+										<div class="col-15">
+											<img src="../wp-content/themes/qmarkets/images/ev-leader-1.png" alt="">
+										</div>
+									</div>
+								</div><!-- /.ev-learning-item-desktop -->
+							</div><!-- /.ev-learning-item -->
+
+							<div class="ev-learning-item">
+								<div class="ev-learning-item-mobile">
+									<img src="../wp-content/themes/qmarkets/images/ev-leader-2.png" alt="">
+									<h4>Maria Tarcsay</h4>
+									<p>Innovation Manager Koina</p>
+								</div>
+
+								<div class="ev-learning-item-desktop">
+									<div class="grid">
+										<div class="col-60">
+											<p>Maria Tarcsay from Koina will be imparting strategies for innovation with many best practice examples. She has participated in more than 30 innovation projects, and held speeches for numerous international companies and universities.</p>
+										</div>
+
+										<div class="col-35">
+											<h4>Maria Tarcsay</h4>
+											<p>Innovation Manager <br> Koina</p>
+										</div>
+
+										<div class="col-15">
+											<img src="../wp-content/themes/qmarkets/images/ev-leader-2.png" alt="">
+										</div>
+									</div>
+								</div><!-- /.ev-learning-item-desktop -->
+							</div><!-- /.ev-learning-item -->
+
+						</div><!-- /.ev-learning-body -->
+
+						<div class="ev-learning-footer">
+							<p>Due to the nature of these sessions, places are limited so <strong>register now to secure your place.</strong></p>
+							<div class="btn">
+								<a href="#register">Register now</a>
+							</div>
+						</div>
+					</div>
+				</div><!-- /.container -->
+			</div>
+			
+			<!-- opportunity -->
+			<div class="ev-features">
+				<div class="container">
+
+					<div class="ev-features-header">
+						<h3>Don’t miss the opportunity to</h3>
+					</div>
+
+					<div class="ev-features-body">
+						<div class="grid">
+
+							<div class="col-1-3 s-col-50 xs-col-100">
+								<div class="ev-feature-item">
+									<div class="ev-feature-item-img-wrap">
+										<img src="../wp-content/themes/qmarkets/images/ev-icon-1.png" alt="">
+									</div>
+									<p>Meet fellow innovation leaders and share challenges and best practices.</p>
+								</div>
+							</div>
+
+							<div class="col-1-3 s-col-50 xs-col-100">
+								<div class="ev-feature-item">
+									<div class="ev-feature-item-img-wrap">
+										<img src="../wp-content/themes/qmarkets/images/ev-icon-2.png" alt="">
+									</div>
+									<p>Hear insights from a solutions provider that has worked on countless innovation projects across the globe</p>
+								</div>
+							</div>
+
+							<div class="col-1-3 s-col-50 xs-col-100">
+								<div class="ev-feature-item">
+									<div class="ev-feature-item-img-wrap">
+										<img src="../wp-content/themes/qmarkets/images/ev-icon-3.png" alt="">
+									</div>
+									<p>Receive expert guidance from a renowned Swiss innovation consulting agency</p>
+								</div>
+							</div>
+
+							<div class="col-1-3 s-col-50 xs-col-100">
+								<div class="ev-feature-item">
+									<div class="ev-feature-item-img-wrap">
+										<img src="../wp-content/themes/qmarkets/images/ev-icon-4.png" alt="">
+									</div>
+									<p>Receive complimentary innovation resourced and thought-leadership</p>
+								</div>
+							</div>
+
+							<div class="col-1-3 s-col-50 xs-col-100">
+								<div class="ev-feature-item">
+									<div class="ev-feature-item-img-wrap">
+										<img src="../wp-content/themes/qmarkets/images/ev-icon-5.png" alt="">
+									</div>
+									<p>Enjoy the stunning panoramic views of picturesque Switzerland from these venues</p>
+								</div>
+							</div>
+
+							<div class="col-1-3 s-col-50 xs-col-100">
+								<div class="ev-feature-item">
+									<div class="ev-feature-item-img-wrap">
+										<img src="../wp-content/themes/qmarkets/images/ev-icon-6.png" alt="">
+									</div>
+									<p>Discover cross-industry and cross-geography best practices</p>
+								</div>
+							</div>
+						</div>
+					</div><!-- /.ev-features-body -->
+
+				</div><!-- /.container -->
+			</div><!-- /.ev-features -->
+
+			<!-- pre footer form -->
+			<article id="register" class="page-section lightgrey-bg form-block ev-form-block" >
+				<div class="container overflow-visible">
+					<div class="grid">
+						<div class="col-45">
+							<div class="form-wrapper ev-form-wrapper">
+								<h3>Don’t miss out on your place…</h3>
+								<p>Please note that tickets for this exclusive event have limited availability. So please register your interest in attending as early as possible!</p>
+								<div class="wpcf7" id="wpcf7-f4491-p4614-o1" lang="en-US" dir="ltr">
+									<div class="screen-reader-response"></div>
+									<form name="" action="http://www.qmarkets.net/info-tech-research-group/#wpcf7-f4491-p4614-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+										<div style="display: none;">
+											<input type="hidden" name="_wpcf7" value="4491" />
+											<input type="hidden" name="_wpcf7_version" value="4.1" />
+											<input type="hidden" name="_wpcf7_locale" value="en_US" />
+											<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f4491-p4614-o1" />
+											<input type="hidden" name="_wpnonce" value="74d7336303" />
+										</div>
+										<div class="grid margin-g-4">
+											<div class="col-100">
+												<div class="report-input col-100">
+													<span class="wpcf7-form-control-wrap menu-company">
+														<select name="menu-company" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
+															<option value="">Event 1</option>
+															<option value="">Event 2</option>
+															<option value="">Event 3</option>
+														</select>
+													</span>
+												</div>
+												
+												<!-- empty placeholder for the bottom margin -->
+												<div class="report-input"></div>
+											</div>
+
+											<div class="col-100">
+												<div class="report-input col-50">
+													<span class="wpcf7-form-control-wrap text-fname">
+														<input type="text" name="text-fname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="First Name *" />
+													</span>
+												</div>
+												<div class="report-input col-50">
+													<span class="wpcf7-form-control-wrap text-lname">
+														<input type="text" name="text-lname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Last Name *" />
+													</span>
+												</div>
+												<div class="report-input col-50">
+													<span class="wpcf7-form-control-wrap text-job-title">
+														<input type="text" name="text-job-title" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Job Title *" />
+													</span>
+												</div>
+												<div class="report-input col-50">
+													<span class="wpcf7-form-control-wrap text-company">
+														<input type="text" name="text-company" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Company *" />
+													</span>
+												</div>
+												<div class="report-input col-50">
+													<span class="wpcf7-form-control-wrap menu-company">
+														<select name="menu-company" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false"><option value="">---</option><option value="Company size *">Company size *</option><option value="250 - 1000 employees">250 - 1000 employees</option><option value="1,000 - 2,500 employees">1,000 - 2,500 employees</option><option value="2,500 - 5,000 employees">2,500 - 5,000 employees</option><option value="5,000 - 10,000 employees">5,000 - 10,000 employees</option><option value="10,000+ employees">10,000+ employees</option><option value="N/a">N/a</option></select>
+													</span>
+												</div>
+												<div class="report-input col-50">
+													<span class="wpcf7-form-control-wrap country">
+														<select name="country" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" id="Country" aria-required="true" aria-invalid="false"><option value="">---</option><option value="Afghanistan">Afghanistan</option><option value="Albania">Albania</option><option value="Algeria">Algeria</option><option value="American Samoa">American Samoa</option><option value="Andorra">Andorra</option></select>
+													</span>
+												</div>
+												<div class="report-input col-50">
+													<span class="wpcf7-form-control-wrap text-mail">
+														<input type="email" name="text-mail" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email *" />
+													</span>
+												</div>
+												<div class="report-input col-50">
+													<span class="wpcf7-form-control-wrap tel-phone">
+														<input type="tel" name="tel-phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Telephone *" />
+													</span>
+												</div>
+											</div>
+										</div>
+
+										<div class="report-submit ev-report-submit">
+											<input type="submit" value="Register now" class="wpcf7-form-control wpcf7-submit btn" />
+										</div>
+
+										<div class="wpcf7-response-output wpcf7-display-none"></div>
+									</form>
+
+								</div>                    
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</article> 
+				
+		</main>	
+	</div> <!-- #wrapper -->
+
+	<!-- footer -->
+	<div id="footer">
+		
+		<div class="row">
+		
+			<div class="container footer-row footer-row-1 bottom-line">
+					
+				<div class="grid">
+					
+							
+					<style type="text/css">
+					
+						.footer-row-1 ul.footer-widgets > li{
+							width: 14.285714%;
+						}
+					
+					</style>
+		
+					<div class="col-100">
+						<ul class="footer-widgets desktop-only"><li id="nav_menu-9" class="widget widget_nav_menu"><h3>Solutions</h3><div class="menu-footer-solutions-container"><ul id="menu-footer-solutions" class="menu"><li id="menu-item-1479" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1479"><a href="../solutions/by-use-case/innovation-management/index.html">By Use Case</a></li>
+						<li id="menu-item-1480" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1480"><a href="../solutions/by-industry/consumer-packaged-goods-cpg/index.html">By Industry</a></li>
+						<li id="menu-item-1481" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1481"><a href="../solutions/by-organization-size/enterprise/index.html">By Organization Size</a></li>
+						</ul></div></li>
+						<li id="nav_menu-14" class="widget widget_nav_menu"><h3>Products</h3><div class="menu-footer-products-container"><ul id="menu-footer-products" class="menu"><li id="menu-item-1483" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1483"><a href="../products/idea-management/features/index.html">Idea Management</a></li>
+						<li id="menu-item-1482" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1482"><a href="../products/additional-products/prediction-markets/index.html">Additional Products</a></li>
+						</ul></div></li>
+						<li id="nav_menu-13" class="widget widget_nav_menu"><h3>Partners</h3><div class="menu-footer-partners-container"><ul id="menu-footer-partners" class="menu"><li id="menu-item-1484" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1484"><a href="../partners/index.html">Our Partners</a></li>
+						</ul></div></li>
+						<li id="nav_menu-12" class="widget widget_nav_menu"><h3>Customers</h3><div class="menu-footer-customers-container"><ul id="menu-footer-customers" class="menu"><li id="menu-item-1485" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1485"><a href="../customers/index.html">Our Customers</a></li>
+						</ul></div></li>
+						<li id="nav_menu-10" class="widget widget_nav_menu"><h3>About Us</h3><div class="menu-footer-about-us-container"><ul id="menu-footer-about-us" class="menu"><li id="menu-item-1488" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1488"><a href="../about-qmarkets/index.html">About Qmarkets</a>
+						<ul class="sub-menu">
+							<li id="menu-item-4722" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4722"><a href="../analyst-reviews/index.html">Analyst Reviews</a></li>
+							<li id="menu-item-1796" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1796"><a href="../about-us/news/index.html">News</a></li>
+							<li id="menu-item-1798" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1798"><a href="../events/index.html">Events</a></li>
+						</ul>
+						</li>
+						</ul></div></li>
+						<li id="nav_menu-17" class="widget widget_nav_menu"><h3>Resources</h3><div class="menu-footer-resources-container"><ul id="menu-footer-resources" class="menu"><li id="menu-item-4187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4187"><a href="../about-us/blog/index.html">Our Blog</a></li>
+						<li id="menu-item-4188" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4188"><a href="../the-q-review/index.html">The Q-Review</a></li>
+						<li id="menu-item-4189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4189"><a href="../newsletters/index.html">Newsletter</a></li>
+						</ul></div></li>
+						<li id="nav_menu-15" class="widget widget_nav_menu"><div class="menu-footer-request-demo-container"><ul id="menu-footer-request-demo" class="menu"><li id="menu-item-686" class="cta-link orange-bg menu-item menu-item-type-post_type menu-item-object-page menu-item-686"><a href="../contact-us/index.html">Request Demo</a></li>
+						</ul></div></li>
+						</ul><ul class="footer-widgets mobile-only"><li id="nav_menu-16" class="widget widget_nav_menu"><div class="menu-footer-request-demo-container"><ul id="menu-footer-request-demo-1" class="menu"><li class="cta-link orange-bg menu-item menu-item-type-post_type menu-item-object-page menu-item-686"><a href="../contact-us/index.html">Request Demo</a></li>
+						</ul></div></li>
+						</ul>
+
+					<div class="clear"></div>
+					</div>
+
+				</div>
+				
+			</div>
+				
+		</div>
+		
+		<div class="row">
+			
+			<div class="container footer-row footer-row-2 bottom-line">
+					
+				<div class="grid">
+		
+					<div class="col-50">
+						<div class="footer-subscribe">
+							<div class="wpcf7" id="wpcf7-f36-o2" lang="en-US" dir="ltr">
+								<div class="screen-reader-response"></div>
+								<form name="" action="http://www.qmarkets.net/gartner-research/#wpcf7-f36-o2" method="post" class="wpcf7-form" novalidate="novalidate">
+								<div style="display: none;">
+									<input type="hidden" name="_wpcf7" value="36" />
+									<input type="hidden" name="_wpcf7_version" value="4.1" />
+									<input type="hidden" name="_wpcf7_locale" value="en_US" />
+									<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f36-o2" />
+									<input type="hidden" name="_wpnonce" value="f88b0794fc" />
+								</div>
+								<h3>Subscribe to Qmarkets' newsletter</h3>
+								<ul class="form-elements">
+									<li class="col-70"><span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Insert e-mail address" /></span></li>
+									<li class="col-30"><input type="submit" value="Subscribe" class="wpcf7-form-control wpcf7-submit" /></li>
+									<li class="submit-element"><span class="wpcf7-form-control-wrap referer"><input type="hidden" name="referer" value="" /></span><span class="wpcf7-form-control-wrap qm_src"><input type="hidden" name="qm_src" value="" /></span><span class="wpcf7-form-control-wrap qm_adgroup"><input type="hidden" name="qm_adgroup" value="" /></span><span class="wpcf7-form-control-wrap qm_src_extra"><input type="hidden" name="qm_src_extra" value="" /></span>
+									</ul>
+									<div class="clear"></div>
+									<div class="wpcf7-response-output wpcf7-display-none"></div></form></div><div class="clear"></div></div></div><div class="col-50"><div class="footer-social"><ul><li><a href="https://www.youtube.com/channel/UCwthPiepHVdSBkl7emGbs4Q/videos" target="_blank"><img width="56" height="56" src="../wp-content/uploads/2015/01/youtube.png" class="attachment-medium" alt="youtube" /></a></li><li><a href="https://www.linkedin.com/company/qmarkets" target="_blank"><img width="56" height="56" src="../wp-content/uploads/2015/01/linkedin.png" class="attachment-medium" alt="linkedin" /></a></li><li><a href="https://twitter.com/QmarketsGlobal" target="_blank"><img width="56" height="56" src="../wp-content/uploads/2015/01/twitter.png" class="attachment-medium" alt="twitter" /></a></li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+						</div> 
+					
+					</div>
+				
+				</div>
+				
+			</div>
+		
+			<div class="row">
+			
+				<div class="container footer-row footer-row-3">
+					
+					<div class="grid">
+		
+						<div class="col-100">
+							<div class="footer-credits">
+								<p>Copyright © 2016 Qmarkets. All rights reserved | Other sites by Qmarkets &#8211; <a href="http://www.qmarkets.de/" target="_blank">Qmarkets Germany</a> &#8211; <a href="http://www.qmarkets.fr/" target="_blank">Qmarkets France</a></p>
+								<p><a href="https://plus.google.com/106398942945494354353?rel=publisher" target="_blank">Qmarkets on Google+</a></p>
+								<div class="clear"></div>
+							</div>
+						</div> 
+					
+					</div>
+				
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		
+		
+		   <!-- Start of LiveChat (www.livechatinc.com) code -->
+<script type="text/javascript">
+window.__lc = window.__lc || {};
+window.__lc.license = 6774501;
+(function() {
+  var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+  lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+})();
+</script>
+<!-- End of LiveChat code -->
+		
+		
+<script type="text/javascript"><!--
+wpa2a.targets=[];
+wpa2a.html_done=true;if(wpa2a.script_ready&&!wpa2a.done)wpa2a.init();wpa2a.script_load();
+//--></script>
+<script type='text/javascript' src='../wp-content/plugins/contact-form-7/includes/js/jquery.form.mind03d.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/www.qmarkets.net\/wp-content\/themes\/qmarkets\/images\/ajax-loading.gif","sending":"Sending ...","cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/plugins/contact-form-7/includes/js/scripts2f54.js?ver=4.1'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/core.min4a80.js?ver=1.11.2'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/widget.min4a80.js?ver=1.11.2'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/accordion.min4a80.js?ver=1.11.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var localize_array = {"ajaxurl":"http:\/\/www.qmarkets.net\/wp-admin\/admin-ajax.php","is_rtl":"","paging_item_title_base":"Page ","event_marker_url":"http:\/\/www.qmarkets.net\/wp-content\/themes\/qmarkets\/images\/event_map_marker.png"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/themes/qmarkets/js/scripts1576.js?ver=1.2.1'></script>
+<script type='text/javascript' src='../wp-content/themes/qmarkets/js/jquery.youtubebackgroundf269.js?ver=1.0.1'></script>
+<script type='text/javascript' src='../wp-content/themes/qmarkets/js/css3-mediaqueries1576.js?ver=1.2.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var localize_array = {"ajaxurl":"http:\/\/www.qmarkets.net\/wp-admin\/admin-ajax.php","is_rtl":"","paging_item_title_base":"Page ","event_marker_url":"http:\/\/www.qmarkets.net\/wp-content\/themes\/qmarkets\/images\/event_map_marker.png"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/themes/qmarkets/customize/custom1576.js?ver=1.2.1'></script>
+<script type='text/javascript' src='../wp-content/themes/qmarkets/flexslider/jquery.flexslider-min1576.js?ver=1.2.1'></script>
+<script type='text/javascript' src='../wp-content/themes/qmarkets/flexslider/jquery.flexslider.manualDirectionControls1576.js?ver=1.2.1'></script>
+<script type='text/javascript' src='../wp-content/themes/qmarkets/js/animate-elems1576.js?ver=1.2.1'></script>
+<script type='text/javascript' src='../wp-content/themes/qmarkets/js/parallax1576.js?ver=1.2.1'></script>
+<script type='text/javascript' src='../wp-content/themes/qmarkets/js/jquery.scrollTo.min1576.js?ver=1.2.1'></script>
+<script type='text/javascript' src='../wp-content/themes/qmarkets/js/jquery.nicescroll.min1576.js?ver=1.2.1'></script>
+<script type='text/javascript' src='../wp-content/themes/qmarkets/js/jquery.animateNumber.min1576.js?ver=1.2.1'></script>
+<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false%22&amp;ver=3.0.0'></script>
+<script type='text/javascript' src='../wp-content/themes/qmarkets/js/gmap3.min2f54.js?ver=4.1'></script>
+<script type='text/javascript' src='../wp-content/themes/qmarkets/js/review-pages0235.js?ver=4.1.1'></script>
+<script type='text/javascript' src='../wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.min00e2.js?ver=1.5.7'></script>
+<script type='text/javascript' src='../wp-content/plugins/easy-fancybox/jquery.mousewheel.min4830.js?ver=3.1.12'></script>
+
+<script type="text/javascript">
+jQuery(document).on('ready post-load', easy_fancybox_handler );
+</script>
+		
+				
+		 
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"74e39bce1e","applicationID":"9828801","transactionName":"b1xVbBMHXBUFUUFQWlYWdlsVD10IS0JUXlAVSkJaTBRXEA1XQkoYTE5Y","queueTime":0,"applicationTime":737,"atts":"QxtWGlsdTxs=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<!-- temporary js file -->
+<script type='text/javascript' src='../wp-content/themes/qmarkets/js/event.js'></script>
+
+</body>
+	
+
+<!-- Mirrored from www.qmarkets.net/gartner-research/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Aug 2016 05:13:16 GMT -->
+</html>
