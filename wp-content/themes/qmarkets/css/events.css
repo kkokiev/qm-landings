@@ -29,6 +29,48 @@
 	letter-spacing: -0.035em;
 }
 
+@media only screen and (max-width: 768px) {
+	.ev-header {
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+
+	.ev-header-logo {
+		margin-bottom: 10px;
+	}
+
+	.ev-header-logo-text {
+		margin-bottom: 15px;
+		font-size: 20px;
+	}
+
+	.ev-header-title {
+		font-size: 36px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.ev-header {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		background-position: 100% 0%;
+	}
+
+	.ev-header-logo {
+		max-width: 80%;
+		margin-bottom: 5px;
+	}
+
+	.ev-header-logo-text {
+		margin-bottom: 10px;
+		font-size: 18px;
+	}
+
+	.ev-header-title {
+		font-size: 28px;
+	}
+}
+
 /*event intro styles*/
 .ev-intro > .grid {
 	width: 100%;
