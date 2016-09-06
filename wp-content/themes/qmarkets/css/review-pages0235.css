@@ -2401,6 +2401,8 @@ span.block {
 .q360-header{
     padding-top: 50px;
     padding-bottom: 40px;
+    background-color: transparent;
+    background-image: url("../images/q360-header-bg.png");
     background-position: top right;
     -webkit-background-size: cover;
     background-size: cover;
@@ -2673,6 +2675,7 @@ span.block {
 
 /*q360 chart (orange ellipse with arrows)*/
 .q360-chart {
+    overflow: hidden;
     display: none;
     position: relative;
     max-width: 600px;
@@ -3050,7 +3053,6 @@ span.block {
         background-size: cover;
     }
 
-    .q360-features-body-block-1 .q360-feature
 }
 
 .q360-features-body-block > div:nth-child(3) {
@@ -3190,15 +3192,18 @@ span.block {
     background: rgb(244, 130, 48);
 }
 
-.q360-feature:hover {
+.q360-feature:hover,
+.q360-feature:focus {
     box-shadow: 0px 0px 12px 4px rgba(0,0,0, .3);
 }
 
-.q360-feature:hover a {
+.q360-feature:hover a,
+.q360-feature:focus a {
     display: block;
 }
 
-.q360-feature:hover p {
+.q360-feature:hover p,
+.q360-feature:focus p {
     font-weight: bold;
 }
 

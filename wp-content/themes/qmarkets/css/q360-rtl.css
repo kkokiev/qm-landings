@@ -1,0 +1,126 @@
+/*body style must be deleted on live*/
+body {
+	direction: rtl;
+}
+/*body style must be deleted on live*/
+
+
+.q360-header {
+	background-image: url(../images/q360-header-bg-rtl.png);
+}
+
+[class*='col-'] {
+	float: right;
+}
+
+.q360-list ol li {
+	padding-left: 0;
+	padding-right: 33px;
+}
+
+.q360-list ol li:before {
+	left: auto;
+	right: 0;
+}
+
+.q360-device-1 {
+	width: 81%;
+	margin-bottom: -2%;
+	transition: all, 2s, linear;
+	transform: translate(50%, 0) translateZ(0);
+}
+
+.q360-device-2 {
+	left: 0;
+	right: 61%;
+	transform: translate(300%, 0) translateZ(0);
+}
+
+.q360-device-3 {
+	width: 13%;
+	left: 0;
+	right: auto;
+	transform: translate(800%, 0) translateZ(0);
+}
+
+.q360-colored-line-part-1 {
+	background-image: url(../images/q360-arr-7-rtl.png);
+}
+
+.q360-colored-line-part-2 {
+	background-image: url(../images/q360-arr-6-rtl.png);
+}
+
+.q360-colored-line-part-3 {
+	background-image: url(../images/q360-arr-5-rtl.png);
+}
+
+.q360-colored-line-part-4 {
+	background-image: url(../images/q360-arr-4.png);
+}
+
+.q360-colored-line-part-5 {
+	background-image: url(../images/q360-arr-3-rtl.png);
+}
+
+.q360-colored-line-part-6 {
+	background-image: url(../images/q360-arr-2-rtl.png);
+}
+
+.q360-colored-line-part-7 {
+	background-image: url(../images/q360-arr-1-rtl.png);
+}
+
+.q360-features-body-block {
+	float: right;
+}
+
+@media only screen and (max-width: 560px) {
+	.q360-features-body-block {
+		padding-left: 15px;
+		padding-right: 100px;
+	}
+
+	.q360-features-body-block-1:before {
+		left: auto;
+		right: 10px;
+	}
+
+	.q360-features-body-block-2:before {
+		left: auto;
+		right: 10px;
+	}
+
+	.q360-features-body-block-2:after {
+		left: auto;
+		right: 10px;
+	}
+
+	.q360-features-body-block-3:before {
+		left: auto;
+		right: 10px;
+	}
+
+}
+
+.q360-feature {
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 9px;
+	border-bottom-left-radius: 9px;
+}
+
+@media only screen and (max-width: 560px) {
+
+	.q360-feature:before {
+		left: auto;
+		right: -42px;
+	}
+}
+
+.suggest-block-small {
+	padding: 18px;
+	padding-left: 40%;
+	background-size: auto 65%;
+	background-position: 8% bottom ;
+}
