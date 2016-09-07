@@ -267,6 +267,7 @@
 
 .ev-map-item-title {
 	position: relative;
+	height: 108px;
 	margin: 0;
 	padding-top: 6px;
 	padding-left: 170px;
@@ -353,11 +354,18 @@
 	position: relative;
 	left: 85%;
 	height: 100%;
+	width: 80%;
+	transition: left 0.4s ease-in;
+	cursor: pointer;
+}
+
+.ev-map-item-outer-block {
+	position: relative;
+	z-index: 4;
+	height: 100%;
 	width: 100%;
 	transform: skewX(25deg);
 	overflow: hidden;
-	transition: left 0.4s ease-in;
-	cursor: pointer;
 }
 
 .ev-map-item-block-wrap {
@@ -393,11 +401,11 @@
 }
 
 .ev-map-item-block-btn {
-	z-index: 3;
+	z-index: 4;
 	position: absolute;
 	display: none;
 	top: 5px;
-	left: 20px;
+	left: -125px;
 	height: 32px;
 	width: 32px;
 	text-decoration: none;
@@ -436,10 +444,11 @@
 @media only screen and (max-width: 1400px) {
 	.ev-map-item-title-wrap {
 		bottom: 52px;
-		width: 32%;
+		width: 35%;
 	}
 
 	.ev-map-item-title {
+		height: 61px;
 		padding-top: 6px;
 		padding-left: 60px;
 		padding-bottom: 6px;
@@ -468,6 +477,10 @@
 @media only screen and (max-width: 1100px) {
 	.ev-map-item {
 		height: 400px;
+	}
+	
+	.ev-map-item-block {
+		width: 85%;
 	}
 
 	.ev-map-item-block-wrap {
@@ -511,8 +524,7 @@
 	}
 
 	.ev-map-item-info-wrap {
-		width: 90%;
-		max-width: 90%;
+		width: 100%;
 		padding-top: 35px;
 		padding-bottom: 10px;
 	}
@@ -532,7 +544,21 @@
 	}
 
 	.ev-map-item-block {
+		width: 90%;
 		left: 75%;
+	}
+
+	.ev-map-item-block:hover,
+	.ev-map-item-block:focus {
+		left: 75%;
+	}
+
+	.ev-map-item-block.open {
+		left: 30%;
+	}
+
+	.ev-map-item-block-btn {
+		left: -105px;
 	}
 }
 
@@ -544,20 +570,16 @@
 	}
 
 	.ev-map-item-title {
+		height: auto;
 		padding-top: 0;
 		padding-left: 10px;
 		padding-right: 35px;
-		padding-bottom: 0;
+		padding-bottom: 2px;
 		font-size: 22px;
 	}
 
 	.ev-map-item-title:after {
-		border-width: 61px 0 0 39px;
-	}
-
-	.ev-map-item-info-wrap {
-		width: 100%;
-		max-width: 100%;
+		display: none;
 	}
 
 	.ev-map-item-info {
@@ -568,7 +590,10 @@
 
 	.ev-map-item-block {
 		left: 90%;
-		width: 90%;
+		width: 85%;
+	}
+
+	.ev-map-item-outer-block {
 		transform: skew(0deg);
 		overflow: visible;
 	}
@@ -584,7 +609,7 @@
 	}
 
 	.ev-map-item-block.open {
-		left: 10%;
+		left: 15%;
 	}
 
 	.ev-map-item-info span {
